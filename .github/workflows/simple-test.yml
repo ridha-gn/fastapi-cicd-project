@@ -1,0 +1,23 @@
+name: Simple Test
+
+on: [push]
+
+jobs:
+  simple-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      
+      - name: List files
+        run: |
+          echo "📁 Project files:"
+          ls -la
+          echo "✅ GitHub Actions is working!"
+          
+      - name: Check Python files
+        run: |
+          echo "🐍 Python files:"
+          ls -la *.py
+          echo "📋 Requirements:"
+          cat requirements.txt
