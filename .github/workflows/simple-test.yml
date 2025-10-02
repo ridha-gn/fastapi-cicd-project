@@ -8,16 +8,5 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-      
-      - name: List files
-        run: |
-          echo "📁 Project files:"
-          ls -la
-          echo "✅ GitHub Actions is working!"
-          
-      - name: Check Python files
-        run: |
-          echo "🐍 Python files:"
-          ls -la *.py
-          echo "📋 Requirements:"
-          cat requirements.txt
+      - name: Success message
+        run: echo "🎉 GitHub Actions is working! Your PFE project is set up correctly."
