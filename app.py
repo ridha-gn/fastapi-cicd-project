@@ -5,7 +5,7 @@ import uuid
 
 app = FastAPI(title="To-Do API", version="1.0.0")
 
-# In-memory storage (for demo purposes)
+
 tasks_db = []
 
 class Task(BaseModel):
