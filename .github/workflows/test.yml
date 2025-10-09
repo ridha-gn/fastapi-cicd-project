@@ -8,4 +8,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Run a one-line script
-      run: echo "🎉 GitHub Actions is working! Project is set up correctly."
+      run: echo " GitHub Actions is working! Project is set up correctly."
